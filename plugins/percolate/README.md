@@ -6,7 +6,7 @@ Connects your AI to [Percolate](https://www.percolationlabs.ai), where you save,
 
 | File | What it does |
 |---|---|
-| `plugin.json` | The [Agent Plugins](https://agent-plugins.org) manifest, which Codex reads, with listing details under `extensions.com.openai`. |
+| `plugin.json` | The [Agent Plugins](https://agent-plugins.org) manifest, which Codex and the ChatGPT desktop app read, with listing details under `extensions.com.openai`. |
 | `.claude-plugin/plugin.json` | The same plugin, described for Claude. |
 | `mcp.json`, `.mcp.json` | The same content under both names: the connection to Percolate at `https://www.percolationlabs.ai/mcp`, which uses Percolate's own sign-in. |
 | `skills/` | Four workflows: making a package, importing a story, finding counterpoints and checking a package. Each follows the matching guide Percolate's server provides. |

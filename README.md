@@ -10,7 +10,8 @@ The Percolate plugin connects your AI to [Percolate](https://www.percolationlabs
 | Codex: add this marketplace and install the plugin from GitHub | Tested on 15 September 2026 |
 | Claude on the web or desktop: installing through **Customize → Plugins** | Not yet tested. The menu exists; the install has not been run |
 | Signing in to Percolate through the plugin, in any app | Not yet tested |
-| ChatGPT | Not available as a plugin. ChatGPT installs plugins from its own directory, and Percolate is not listed. Use a connector instead (below) |
+| ChatGPT desktop app: installing through **Plugins → Add → Add a marketplace** | Not yet tested. The app offers it (ChatGPT 26.903); the install has not been run |
+| ChatGPT on the web or a phone | Not known whether a plugin added in the desktop app works there. Use a connector (below) |
 
 ## Install
 
@@ -38,7 +39,13 @@ codex plugin add percolate@percolation-labs
 
 Signing in to Percolate from Codex has not been tested yet.
 
-### ChatGPT, and any app without plugins
+### ChatGPT desktop app (not yet tested)
+
+1. Open **Plugins**.
+2. Choose **Add → Add a marketplace**, and enter `Percolation-Labs/percolate-plugins` as the **Source**.
+3. Install **Percolate**. If ChatGPT asks you to connect, sign in to Percolate and choose **Allow**.
+
+### ChatGPT on the web or a phone, and any app without plugins
 
 Add Percolate as a connector with the address `https://www.percolationlabs.ai/mcp`. [Connect your AI](https://www.percolationlabs.ai/app/connections) walks through it for each app.
 
@@ -48,7 +55,7 @@ Add Percolate as a connector with the address `https://www.percolationlabs.ai/mc
 |---|---|
 | `plugins/percolate/` | The plugin: both manifests, the MCP connection and four skills. |
 | `.claude-plugin/marketplace.json` | The marketplace Claude reads. |
-| `.agents/plugins/marketplace.json` | The marketplace in the Agent Plugins format, which Codex reads. |
+| `.agents/plugins/marketplace.json` | The marketplace in the Agent Plugins format. Codex reads it (tested); the ChatGPT desktop app can add it (not yet tested). |
 
 ## Links
 
