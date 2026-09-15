@@ -55,6 +55,10 @@ Add Percolate as a connector with the address `https://www.percolationlabs.ai/mc
 | `.claude-plugin/marketplace.json` | The marketplace Claude reads. |
 | `.agents/plugins/marketplace.json` | The marketplace in the Agent Plugins format. Codex reads it (tested); the ChatGPT desktop app can add it (not yet tested). |
 
+## License
+
+[Apache-2.0](LICENSE). The skills here are the starting points; the guides they fetch are served by Percolate to signed-in writers and are not part of this repository.
+
 ## Links
 
 [Privacy](https://www.percolationlabs.ai/privacy.html) · [Terms](https://www.percolationlabs.ai/terms.html) · [Support](https://www.percolationlabs.ai/support.html)

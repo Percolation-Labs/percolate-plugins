@@ -9,6 +9,7 @@
   },
   "homepage": "https://www.percolationlabs.ai",
   "repository": "https://github.com/Percolation-Labs/percolate-plugins",
+  "license": "Apache-2.0",
   "keywords": [
     "research",
     "evidence",
