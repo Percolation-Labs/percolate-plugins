@@ -1,0 +1,15 @@
+{
+  "name": "percolation-labs",
+  "owner": {
+    "name": "Percolation Labs",
+    "url": "https://www.percolationlabs.ai"
+  },
+  "description": "Percolation Labs' plugins: Percolate connects your AI to research packages a reader can check.",
+  "plugins": [
+    {
+      "name": "percolate",
+      "source": "./plugins/percolate",
+      "description": "Save, read and revise research packages in Percolate: arguments a reader can check, with the evidence behind each claim."
+    }
+  ]
+}

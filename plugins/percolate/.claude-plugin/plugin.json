@@ -1,0 +1,18 @@
+{
+  "name": "percolate",
+  "displayName": "Percolate",
+  "version": "0.1.0",
+  "description": "Save, read and revise research packages in Percolate: arguments a reader can check, with the evidence behind each claim.",
+  "author": {
+    "name": "Percolation Labs",
+    "url": "https://www.percolationlabs.ai"
+  },
+  "homepage": "https://www.percolationlabs.ai",
+  "repository": "https://github.com/Percolation-Labs/percolate-plugins",
+  "keywords": [
+    "research",
+    "evidence",
+    "citations",
+    "writing"
+  ]
+}

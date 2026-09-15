@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "percolate",
+  "version": "0.1.0",
+  "description": "Save, read and revise research packages in Percolate: arguments a reader can check, with the evidence behind each claim.",
+  "author": {
+    "name": "Percolation Labs",
+    "url": "https://www.percolationlabs.ai"
+  },
+  "homepage": "https://www.percolationlabs.ai",
+  "repository": "https://github.com/Percolation-Labs/percolate-plugins",
+  "keywords": [
+    "research",
+    "evidence",
+    "citations",
+    "writing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Percolate",
+        "shortDescription": "Research packages with evidence a reader can check",
+        "longDescription": "Turn an argument into a research package that states its question, its claims and the sources behind each one. Import an essay from a link without copying its text, find work that answers the same question differently, and see what supports a package before you trust it. Everything you save stays private to you until you publish it.",
+        "developerName": "Percolation Labs",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://www.percolationlabs.ai",
+        "privacyPolicyURL": "https://www.percolationlabs.ai/privacy.html",
+        "termsOfServiceURL": "https://www.percolationlabs.ai/terms.html",
+        "defaultPrompt": [
+          "Import this essay into Percolate as a private draft: <link>",
+          "Does anyone disagree with the main claim in my latest Percolate package?",
+          "What supports my Percolate package on this topic, and where is it weakest?"
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      }
+    }
+  }
+}
