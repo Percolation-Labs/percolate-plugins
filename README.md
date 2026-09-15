@@ -6,20 +6,19 @@ The Percolate plugin connects your AI to [Percolate](https://www.percolationlabs
 
 | | Status |
 |---|---|
-| Claude Code: add this marketplace and install the plugin from GitHub | Tested on 15 September 2026 |
-| Codex: add this marketplace and install the plugin from GitHub | Tested on 15 September 2026 |
-| Claude on the web or desktop: installing through **Customize → Plugins** | Not yet tested. The menu exists; the install has not been run |
-| Signing in to Percolate through the plugin, in any app | Not yet tested |
-| ChatGPT desktop app: installing through **Plugins → Add → Add a marketplace** | Not yet tested. The app offers it (ChatGPT 26.903); the install has not been run |
+| Claude on the web: add this marketplace and add the plugin | Tested on 15 September 2026. The plugin's connector was already connected on that account, so connecting for the first time from the plugin has not been tested |
+| Claude Code: install from GitHub, then sign in to Percolate | Tested on 15 September 2026: signed in, and the connection checked as connected |
+| Codex: install from GitHub, then sign in to Percolate | Tested on 15 September 2026: signed in. The account had already allowed Codex, so the Allow page was not shown |
+| ChatGPT desktop app: **Plugins → Add → Add a marketplace** | Not yet tested. The app offers it (ChatGPT 26.903) |
 | ChatGPT on the web or a phone | Not known whether a plugin added in the desktop app works there. Use a connector (below) |
 
 ## Install
 
-### Claude on the web or desktop (not yet tested)
+### Claude on the web or desktop
 
 1. Open **Customize → Plugins**.
-2. Choose **Add → Add marketplace** and enter `Percolation-Labs/percolate-plugins`.
-3. Install **Percolate**. If Claude asks you to connect, sign in to Percolate and choose **Allow**.
+2. Choose **Add → Add marketplace → Add from a repository**. Search for or paste `Percolation-Labs/percolate-plugins`, and choose **Sync**.
+3. Choose **Add** on **Percolate**. If its connector is not connected, connect it: sign in to Percolate and choose **Allow**.
 
 ### Claude Code
 
@@ -28,16 +27,15 @@ The Percolate plugin connects your AI to [Percolate](https://www.percolationlabs
 /plugin install percolate@percolation-labs
 ```
 
-Then run `/mcp` to connect Percolate. Signing in this way has not been tested yet.
+Then run `/mcp`, or `claude mcp login plugin:percolate:percolate`, to sign in to Percolate.
 
 ### Codex
 
 ```
 codex plugin marketplace add Percolation-Labs/percolate-plugins
 codex plugin add percolate@percolation-labs
+codex mcp login percolate
 ```
-
-Signing in to Percolate from Codex has not been tested yet.
 
 ### ChatGPT desktop app (not yet tested)
 
